@@ -79,7 +79,7 @@ rm index.nginx-debian.html
 ### to create new file
 vi index.html
 
-###commands
-####q -> exit  
-####:wq to save and exit
-####ctrl+c --> come out from nginx loop
+### commands
+#### q -> exit  
+#### :wq to save and exit
+#### ctrl+c --> come out from nginx loop

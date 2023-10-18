@@ -5,7 +5,9 @@
 Name: MyVPC-DemoClass
 IPV4 CIDR: 10.0.0.0/16
 
-Here new VPC will be created.
+Here, a new VPC will be created.
+
+### CIDR -> classless inter-domain routing. it allows the range of IP into the vpc.
 
 ### Create Subnets  
 

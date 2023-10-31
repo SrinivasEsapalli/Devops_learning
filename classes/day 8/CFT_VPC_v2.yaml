@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Creating Vpc,Subnets,Internet Gateway,Rote table,Nat GateWay using cloud formation template
+
+Parameters:
+  Day:
+    Description: displays the day
+    Type: String
+    Default: day8
+  CidrBlock:
+    Description: shows cidr range
+    Type: String
+    Default: 10.0.0.0/16
+  Name:
+    Description: displays the name of vpc
+    Type: String
+    Default: MyVPC-CFT
+  
+
+Resources:
+ MyVPC:
+   Type: AWS::EC2::VPC
+   Properties:
+     CidrBlock: !Ref CidrBlock
+     Tags:
+       - Key: Name
+         Value: !Ref Name
+       - Key: day
+         Value: !Ref Day 

@@ -54,7 +54,7 @@ docker ps -a
 ### running containers in background 
 docker run -d nginx
 
-# We cannot remove a running container directly we need to stop then only we can remove it.
+### We cannot remove a running container directly we need to stop then only we can remove it.
 
 ### to Stop
 docker stop container id

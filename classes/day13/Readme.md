@@ -12,12 +12,13 @@ Docker commands:
 1. [ Image ](#image)
 2. [ Container ](#container)
 3. [ Running Container ](#run)
-4. [ Container Exec ](#exec)
-5. [ Nginx Container ](#nginx)
 
 ---  
 
 # docker image is the collection of softwares dependencys and librarys...
+
+<a name="image"></a>
+## Image  
 
 ###  To download all the dependencys in the docker..i.e to download complete docker image
 
@@ -36,9 +37,13 @@ docker rmi hello-world:linux
 
 if we didnt mention any tag it will remove latest tag image
 
-###  To run particular image(Application
+###  To run particular image(Application)
 docker run hello-world
 after running the image the containers are created by default.
+
+
+<a name="container"></a>
+## Container
 
 ### To list the running containers
  docker ps

@@ -12,7 +12,7 @@ Docker commands:
 1. [ Image ](#image)
 2. [ Container ](#container)
 3. [image build & Tag ](#build)
-4. [image creation](#image creation)
+4. [ image creation](#imagecreation)
 ---  
 
 # docker image is the collection of softwares dependencys and librarys...
@@ -90,7 +90,7 @@ docker tag customized-hello-world:v1.0 srinivasesapalli/hello-world-customized:v
 
 
 
-<a name="image creation"></a>
+<a name="imagecreation"></a>
 # docker image creation and running
 --> first build the image ex: docker build --tag "<image-name>:<image-tag-version>" --file "/path/to/Dockerfile"  .
 docker build --tag "custom-nginx:v1.0" --file "./Dockerfile" .

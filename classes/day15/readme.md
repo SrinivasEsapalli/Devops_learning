@@ -12,6 +12,7 @@ Docker commands:
 1. [ Image ](#image)
 2. [ Container ](#container)
 3. [image build & Tag ](#build)
+4. [image creation](#image creation)
 
 
 ---  
@@ -90,10 +91,27 @@ docker tag customized-hello-world:v1.0 srinivasesapalli/hello-world-customized:v
 
 
 
-## docker image
---> first build the image
+
+<a name="image creation"></a>
+# docker image creation and running
+--> first build the image ex: docker build --tag "<image-name>:<image-tag-version>" --file "/path/to/Dockerfile"  .
+docker build --tag "custom-nginx:v1.0" --file "./Dockerfile" .
+
 --> tag the image with the version
+docker tag <image-name>:<current-tag> <image-name>:<new=tag>
+ex:
+docker tag customized-hello-world:v1.0 srinivasesapalli/hello-world-customized:v2
+//srinivasesapalli/hello-world-customized:v2 --> dockerr hub repo name
+
 --> push to docker hub
+
+docker push srinivasesapalli/customnginx
+
+
+--> to run in local port with port number
+docker run -d -p 5051:80 --name custom-nginx-container custom-nginx:v1.0
+
+
 
 
 Day 15:

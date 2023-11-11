@@ -1,0 +1,8 @@
+#We are running from this software
+FROM ubuntu
+
+
+#Labels as Key value pair
+LABEL Maintainer="Srini"
+
+CMD ["echo", "welcome to devops Classes...here im trying the different version with different text....."]

@@ -1,0 +1,23 @@
+#Source image
+From ubuntu:18.04
+
+#maintainer
+LABEL maintainer="srini.m35"
+
+#install python
+Run apt-get -y update && apt-get -y install python
+
+#Any working directory can be chosen as per choice like '/' or '/home' etc
+# i have chosen /usr/app/src
+WORKDIR /usr/app/src
+
+#to copy the remote file at working directory in cotainer
+copy test.py ./
+
+
+
+#CMD instruction should be used to run the software
+#contained by your img along with arg
+
+CMD ["python", "./test.py"]
+

@@ -78,7 +78,7 @@ docker inspect container id
 ## image & build
 
 ### Use below command to build image  
-```
+
 docker build --tag "<image-name>:<image-tag-version>" --file "/path/to/Dockerfile"  .
 ### note the . is also part of the syntax
 
